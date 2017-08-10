@@ -10,11 +10,11 @@ namespace Go_Fish
     {
         static void Main(string[] args)
         {
-            Card[] deck = new Card[52];
+            Card[] deck = new Card[52]; //Creating 52 card deck.
             int suit = 0;
             int rank = 0;
             int d = 0;
-            while (d < 52)
+            while (d < 52)  //Creating 52 card deck.
             {
                 while (suit < 4)
                 {

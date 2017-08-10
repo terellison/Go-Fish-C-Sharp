@@ -12,9 +12,17 @@ namespace Go_Fish
         private List<Card> _cardsInHand;
         int _book = 0;
 
-        public void AskForCard(string name)
+        public Player(string name)
         {
             _name = name;
+        }
+
+        public void DrawCard(Card[] deck)
+        {
+            Random randCard = new Random();
+            int drawCard = randCard.Next(deck.Length + 1);
+            _cardsInHand.Add(deck[drawCard]);
+
         }
 
         public bool AskForCardRank(string rank)
