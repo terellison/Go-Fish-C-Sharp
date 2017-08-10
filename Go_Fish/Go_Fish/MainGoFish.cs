@@ -29,12 +29,15 @@ namespace Go_Fish
                 }
             }
 
+            Player Amer = new Player("Amer");
+            Player Terry = new Player("Terry");
+            Amer.Draw9Cards(deck);
+            Terry.Draw9Cards(deck);
 
-
-
-
-
-
+            foreach (Card c in Amer.GetCardsInHand)
+            {
+                Console.WriteLine(c.GetName);
+            }
             Console.ReadKey();
         }
     }

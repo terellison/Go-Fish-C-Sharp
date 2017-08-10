@@ -58,11 +58,11 @@ namespace Go_Fish
                 case 9:
                     return "10";
                 case 10:
-                    return "J";
+                    return "Jack";
                 case 11:
-                    return "Q";
+                    return "Queen";
                 default:
-                    return "K";
+                    return "King";
             }
         }
         public string GetSuit { get { return _suit; } }
